@@ -1,5 +1,9 @@
 {
     "name": "inject-helpers",
     "main": "main.lua",
-    "desc": "test processor to see if processors work"
+    "desc": "test processor to see if processors work",
+
+    "dependencies": {
+        "Black-Mesas/sb-pkgs": "helper-libs"
+    }
 }

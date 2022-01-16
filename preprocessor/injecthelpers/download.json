@@ -1,0 +1,5 @@
+{
+    "name": "inject-helpers",
+    "main": "main.lua",
+    "desc": "test processor to see if processors work"
+}

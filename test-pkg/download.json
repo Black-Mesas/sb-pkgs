@@ -1,4 +1,9 @@
 {
     "name": "test-pkg",
-    "main": "main.lua"
+    "main": "main.lua",
+    "desc": "Test package. Tests multiple features of download.lua.",
+
+    "dependencies": {
+        "Black-Mesas/sb-pkgs": "helper-libs"
+    }
 }

@@ -18,11 +18,31 @@ function processor.ReplaceSource(targetPkg, libs, source)
         end
     end
 
-    local out = table.concat(lines, "\n")
+    local out = ""
+
+    local index = 1
+    while not lines[index] and index < #lines + 16 do
+        index += 1        
+    end
+
+    local endIndex = index
+    while lines[endIndex] and endIndex < #lines + 16 do
+        endIndex += 1
+    end
+
+    for i = index, endIndex do
+        local line = lines[i]
+
+        if line then
+            out = out .. line .. "\n"
+        end
+    end
     
     for name, defined in pairs(defines) do
-        source = source:gsub(name, defined)
+        out = out:gsub(name, defined)
     end
+
+    return out
 end
 
 return processor

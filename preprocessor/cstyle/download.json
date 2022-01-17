@@ -1,0 +1,9 @@
+{
+    "name": "cstyle",
+    "desc": "adds some useful macros from C",
+    "main": "main.lua",
+
+    "dependencies": {
+        "Black-Mesas/sb-pkgs": "utils"
+    }
+}

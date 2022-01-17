@@ -4,6 +4,9 @@
     "desc": "Test package. Tests multiple features of download.lua.",
 
     "preprocessor": {
-        "Black-Mesas/sb-pkgs": "inject-helpers"
+        "Black-Mesas/sb-pkgs": [
+            "inject-helpers",
+            "cstyle"
+        ]
     }
 }

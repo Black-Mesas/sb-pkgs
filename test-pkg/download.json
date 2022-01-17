@@ -5,8 +5,8 @@
 
     "preprocessor": {
         "Black-Mesas/sb-pkgs": [
-            "inject-helpers",
-            "cstyle"
+            "cstyle",
+            "inject-helpers"
         ]
     }
 }

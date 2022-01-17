@@ -10,7 +10,7 @@ function processor.ReplaceSource(targetPkg, libs, source)
     local defines = {}
 
     for i, line in pairs(lines) do
-        if stringutils.startsWith("#define") then
+        if stringutils.startsWith(line, "#define") then
             local arguments = line:split(" ")
             local name = arguments[2]
             defines[name] = table.concat(tableutils.sub(arguments, 3), " ")

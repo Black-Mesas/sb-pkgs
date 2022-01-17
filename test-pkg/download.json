@@ -3,10 +3,7 @@
     "main": "main.lua",
     "desc": "Test package. Tests multiple features of download.lua.",
 
-    "preprocessor": {
-        "Black-Mesas/sb-pkgs": [
-            "cstyle",
-            "inject-helpers"
-        ]
+    "dependencies": {
+        "Black-Mesas/sb-pkgs": "helper-libs"
     }
 }
